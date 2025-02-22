@@ -4,9 +4,9 @@ Step 1: login to machine as user docker
 sudo apt update 
 sudo apt install ssh
 ssh-keygen -t rsa 
-ssh-copy-id docker@IPaddress
+ssh-copy-id docker@private_IP_address
 chmod 640 ~/.ssh/authorized_keys 
-Check ssh docker@Ipaddress
+ssh docker@Ipaddress
 
 Step2:
 
