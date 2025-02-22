@@ -7,3 +7,8 @@ hdfs dfs -mkdir /user/docker
 touch 1.txt
 hdfs dfs -mkdir input
 hdfs dfs -put 1.txt /user/docker/input/1.txt
+===========================
+# How to check hdfs logs
+cd /usr/local/hadoop/logs
+ls
+tail -100f hadoop-docker-namenode-hadoop.log
