@@ -1,0 +1,37 @@
+touch ey.txt
+# add  some data inside ey.txt
+ hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.4.0.jar grep input output1 'rohit'
+hdfs dfs -ls /user/docker/
+ hdfs dfs -ls /user/docker/output1
+  152  hdfs dfs -get output1 output1
+  153  ls
+  154  history
+  155  clear
+  156  cp ey.txt ey1.txt
+  157  vi ey1.txt
+  158  ls -lh ey1.txt
+  159  cd /usr/local/hadoop/etc/hadoop/
+  160  ls
+  161  cd ..
+  162  du -sh hadoop/
+  163  cd ~
+  164  #hdfs dfs -cp /usr/local/hadoop/etc/hadoop/*.xml
+  165  hdfs dfs -mkdir samosa
+  166  hdfs dfs -ls /user/docker
+  167  hdfs dfs -cp /usr/local/hadoop/etc/hadoop/*.xml samosa
+  168  hdfs dfs -put /usr/local/hadoop/etc/hadoop/*.xml samosa
+  169  hdfs dfs -ls samosa
+  170  hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.4.0.jar grep samosa vadapav 'dfs[a-z.]+'
+  171  clear
+  172  hdfs dfs -ls /
+  173  hdfs dfs -ls /user/docker
+  174  hdfs dfs -ls /user/docker/vadapav
+  175  hdfs dfs -get vadapav vadapav
+  176  ls
+  177  hdfs dfs -cat vadapav/
+  178  hdfs dfs -cat vadapav
+  179  hdfs dfs -cat vadapav/*
+  180  hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.4.0.jar grep samosa vadapav2 'dfs[a-z][0-9]'
+  181  hdfs dfs -get vadapav2 vadapav2
+  182  hdfs dfs -cat vadapav2/*
+  183  history
