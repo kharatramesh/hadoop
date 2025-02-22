@@ -47,10 +47,10 @@ cd /usr/local/hadoop/etc/hadoop
 vi hadoop-env.sh
 
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-
+=====================
 Step7:
 cd /usr/local/hadoop/etc/hadoop
-
+cp core-site.xml core-site1.xml
 vi core-site.xml
 <configuration>
     <property>
@@ -58,11 +58,11 @@ vi core-site.xml
         <value>hdfs://PrivateIP:9000</value>
     </property>
 </configuration>
-
+=================================================
 Step8:
 
 cd /usr/local/hadoop/etc/hadoop
-
+cp hdfs-site.xml hdfs-site1.xml
 vi hdfs-site.xml
 
 <configuration>
@@ -71,7 +71,7 @@ vi hdfs-site.xml
         <value>1</value>
     </property>
 </configuration>
-
+============================================
 Step9:
 
 hdfs namenode -format
