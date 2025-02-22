@@ -1,5 +1,5 @@
 
-Step 1: login to machine as user docker
+Step 1: login to machine as user docker (using port 22 , use ssh)
 sudo hostnamectl set-hostname hadoop
 bash
 sudo apt update 
