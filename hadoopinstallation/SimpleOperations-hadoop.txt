@@ -2,7 +2,7 @@ hdfs dfs -ls /
 hdfs dfs -mkdir /user
 hdfs dfs -mkdir /user/docker
 
-push local 1.txt file to hdfs partition
+## Questions :  push local 1.txt file to hdfs partition
 
 touch 1.txt
 hdfs dfs -mkdir input
