@@ -3,3 +3,10 @@
 file1 = spark.read.format('csv').option('inferSchema',True).option('header',True).load('/Volumes/trainer-catalog/default/trainer-volume/db1.csv')
 file1.display()
 file1.show()
+==========================================================
+
+newfile1 = spark.read.format('csv').option('inferSchema',True).option('header',True).load('/Volumes/trainer-catalog/default/trainer-volume/population1.csv/population1.csv')
+newfile1.printSchema()
+f1 = newfile1.select('Country Name', 'Country Code', '1960')
+f1.display()
+===========================================================
