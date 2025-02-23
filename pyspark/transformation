@@ -1,0 +1,5 @@
+# reading/loading files from volumes from databricks
+
+file1 = spark.read.format('csv').option('inferSchema',True).option('header',True).load('/Volumes/trainer-catalog/default/trainer-volume/db1.csv')
+file1.display()
+file1.show()
